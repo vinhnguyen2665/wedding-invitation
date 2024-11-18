@@ -380,7 +380,7 @@
 }
 
 .wrap-card-welcome {
-    height: 100%;
+    /*height: 100%;*/
     z-index: 1000;
 }
 
@@ -388,8 +388,12 @@
     bottom: 0px;
     font-family: wedding-font-vni;
     position: absolute;
-    font-size: 21px;
+    /*font-size: 21px;*/
+    font-size: 30px;
     z-index: 1000;
+/*    --- */
+    width: 80%;
+    text-align: center;
 }
 
 .card-header-inviter.name {

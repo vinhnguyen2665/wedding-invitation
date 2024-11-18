@@ -52,7 +52,8 @@
 <div id="wrapper">
     <div id="container">
         <section class="open-book">
-            <div class="card-welcome-main">
+<!--            <div class="card-welcome-main">-->
+            <div class="card-welcome-all">
                 <div class="card-welcome">
                     <img class="bg-top-right" src="/assets/images/right-top.png"/>
                     <img class="bg-bottom-left" src="/assets/images/right-top.png"/>
@@ -92,14 +93,14 @@
 
                         <div class="card-welcome-header">
                             <div class="card-welcome-text vni">
-                                Wedding
+                                Wedding Invitation
                             </div>
                             <div class="card-welcome-date">
-                                <%= data.cfg.female.time_start.date.lunar.day %>
+                                <%= data.cfg.female.time_start.date.solar.day %>
                                 -
-                                <%= data.cfg.female.time_start.date.lunar.month %>
+                                <%= data.cfg.female.time_start.date.solar.month %>
                                 -
-                                <%= data.cfg.female.time_start.date.lunar.year %>
+                                <%= data.cfg.female.time_start.date.solar.year %>
                             </div>
 
                         </div>
@@ -149,18 +150,18 @@
                                                 data.cfg.female.time_start.time.hour %> giờ
                                                     <%= data.cfg.female.time_start.time.minute %>"</span>
                             <div class="information-time">
-                                                <span class="week vni">Thứ <%=
-                                                    data.cfg.female.time_start.date.day_of_week %></span>
+                                <span class="week vni">Thứ <%= data.cfg.female.time_start.date.day_of_week %></span>
                                 <span class="day btn">
-                                                    <%= data.cfg.female.time_start.date.lunar.day %>
+                                                    <%= data.cfg.female.time_start.date.solar.day %>
                                                 </span>
                                 <span class="month vni">Tháng <%=
-                                    data.cfg.female.time_start.date.lunar.month %></span>
+                                    data.cfg.female.time_start.date.solar.month %></span>
                             </div>
                             <span class="detail-time">(Tức ngày <%=
                                 data.cfg.female.time_start.date.lunar.day %>/
                                                     <%= data.cfg.female.time_start.date.lunar.month %>)</span>
-                            <div style="padding-top:10px">Tại tự gia Nhà Gái</div>
+<!--                            <div style="padding-top:10px">Tại tự gia Nhà Gái</div>-->
+                            <div style="padding-top:10px">Tại</div>
                             <div class="address">
                                 <%= data.cfg.female.location.text %>
                             </div>

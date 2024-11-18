@@ -1,7 +1,7 @@
 
 const SeedDB = {
   user: {
-    email: "admin@invitation.com",
+    email: "vinhnguyen2665@gmail.com",
     username: "admin",
     password: "$2b$10$VhmfGtzS9/IZPQuLQhmXkeTZmXrHYjIV2HCRfsOEp66Yk/OJiwow2", //123qwe
     password_confirm: "$2b$10$VhmfGtzS9/IZPQuLQhmXkeTZmXrHYjIV2HCRfsOEp66Yk/OJiwow2",
@@ -9,31 +9,31 @@ const SeedDB = {
   },
   dataConfig: {
     male: {
-      name: "Nguyễn Văn An",
+      name: "Nguyễn Quang Vinh",
       parent: {
-        father: "Họ Tên Bố",
-        mother: "Họ Tên Mẹ"
+        father: "",
+        mother: "Nguyễn Thị Thâu"
       },
       location: {
-        text: "Quảng Yên - Quảng Ninh - Việt Nam",
-        map: "https://goo.gl/maps/tTZz4qKhaiqSL8Q66"
+        text: "Nhà hàng H2T - Kim Chung",
+        map: "https://maps.app.goo.gl/PyHqsqtNqQz4cFPj8"
       },
       time_start: {
         date: {
           lunar: {
-            day: "17",
+            day: "19",
+            month: "11",
+            year: "2024"
+          },
+          solar: {
+            day: "19",
             month: "12",
-            year: "2020"
+            year: "2024"
           },
           day_of_week: "5",
-          solar: {
-            day: "17",
-            month: "12",
-            year: "2020"
-          }
         },
         time: {
-          hour: "10",
+          hour: "16",
           minute: "00"
         }
       },
@@ -54,34 +54,34 @@ const SeedDB = {
         provider_number: "0973699999",
         holder_name: "NGUYEN VAN AN"
       }],
-      email: "male@gmail.com",
+      email: "vinhnguyen2665@gmail.com",
       phone: "0973699999",
-      bg: '/assets/images/bg.jpg',
+      bg: '/assets/images/_EXO2386.png',
       bg_fb: '/assets/images/bg-fb.jpg'
     },
     female: {
-      name: "Nguyễn Thị Lan Anh",
+      name: "Nguyễn Thị Bích Quyền",
       parent: {
-        father: "Họ Tên Bố",
-        mother: "Họ Tên Mẹ"
+        father: "",
+        mother: "Trương Thị Lý"
       },
       location: {
-        text: "Quốc Oai - Hà Nội - Việt Nam",
-        map: "https://goo.gl/maps/tRjKuVRNisqxhQaT7"
+        text: "Nhà hàng Công Đoàn - TP Tuy Hoà",
+        map: "https://maps.app.goo.gl/VumPDMn33mwiqbUPA"
       },
       time_start: {
         date: {
           lunar: {
-            day: "17",
-            month: "12",
-            year: "2020"
+            day: "09",
+            month: "11",
+            year: "2024"
           },
-          day_of_week: "5",
           solar: {
-            day: "17",
+            day: "09",
             month: "12",
-            year: "2020"
-          }
+            year: "2024"
+          },
+          day_of_week: "2",
         },
         time: {
           hour: "10",
@@ -106,8 +106,8 @@ const SeedDB = {
         holder_name: "NGUYEN VAN AN"
       }],
       email: "female@gmail.com",
-      phone: "0985123123",
-      bg: '/assets/images/bg.jpg',
+      phone: "0345294506",
+      bg: '/assets/images/_EXO2386.png',
       bg_fb: '/assets/images/bg-fb.jpg'
     },
     default: true
