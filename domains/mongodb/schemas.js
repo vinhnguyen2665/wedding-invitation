@@ -59,7 +59,8 @@ const DATA_CONFIG = new Schema({
                     day: String,
                     month: String,
                     year: String
-                }
+                },
+                day_of_week: String,
             },
             time: {
                 hour: String,
@@ -93,7 +94,8 @@ const DATA_CONFIG = new Schema({
                     day: String,
                     month: String,
                     year: String
-                }
+                },
+                day_of_week: String,
             },
             time: {
                 hour: String,
