@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui"/>
     <title> Kính mời <%= (data.invitee !== null) ? data.invitee.name : "" %> </title>
 
-    <meta proeperty="og:url" content="https://sauanla.com/"/>
+    <meta proeperty="og:url" content="https://vq-invitation.zero9vn.com/"/>
     <meta property="og:site_name" content="Happy wedding"/>
 
     <meta property="og:image" content="<%= data.cfg.male.bg_fb %>?v=<%= +new Date() %>"/>
@@ -16,9 +16,14 @@
     <meta property="og:image:height" content="702"/>
     <meta property="fb:admins" content="100004574107394"/>
     <meta property="og:updated_time" content="<%= +new Date() %>"/>
-    <meta name="keywords" content='Kính mời <%= (data.invitee !== null) ? data.invitee.name : "" %>'/>
+    <meta name="keywords" content='Kính mời <%= (data.invitee !== null) ? data.invitee.name : "" %>
+                                - <%= data.cfg.male.time_start.date.solar.day %>
+                                -
+                                <%= data.cfg.male.time_start.date.solar.month %>
+                                -
+                                <%= data.cfg.male.time_start.date.solar.year %>'/>
     <meta name="description" content="Sự hiện diện của quý vị là niềm vinh dự lớn cho gia đình Chúng tôi"/>
-    <link rel="shortcut icon" href="https://sauanla.com/wp-content/uploads/2020/06/ico-logo-sauanla2-300x245.png"/>
+<!--    <link rel="shortcut icon" href="<%= data.cfg.male.bg %>"/>-->
 
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="/assets/css/metismenu.min.css" rel="stylesheet" type="text/css"/>
