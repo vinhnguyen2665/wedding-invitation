@@ -23,6 +23,7 @@ module.exports = {
     domain: process.env.DOMAIN,
     bodyParserUrlencodedLimit: process.env.BODY_PARSER_URLENCODED_LIMIT,
     bodyParserJsonLimit: process.env.BODY_PARSER_JSON_LIMIT,
+    version: process.env.VERSION,
     log: (env) => {
         if (env) return log[env]();
         return log['development']();

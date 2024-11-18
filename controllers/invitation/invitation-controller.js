@@ -2,7 +2,7 @@
 
 const BaseController = require("../../core/base-controller");
 const { AREA, MODE } = require("../../helpers/constants");
-
+const config = require('../../configs/system-configs');
 
 class InvitationController extends BaseController {
 
@@ -29,6 +29,7 @@ class InvitationController extends BaseController {
                     cfg: data,
                     invitee: null,
                 },
+                version: config.version
             });
         } catch (error) {
             res.render('err/occurs-error', {
@@ -66,6 +67,7 @@ class InvitationController extends BaseController {
                         cfg: config,
                         invitee: invitee,
                     },
+                    version: config.version
                 });
             } else if (invitee.area === AREA.MALE) {
                 res.render('invitation/male', {
@@ -74,6 +76,7 @@ class InvitationController extends BaseController {
                         mode: MODE.HAS_DATA,
                         cfg: config,
                         invitee: invitee,
+                        version: config.version
                     },
                 });
             }
@@ -103,6 +106,7 @@ class InvitationController extends BaseController {
                 data: {
                     mode: 1
                 },
+                version: config.version
             });
         } catch (error) {
             res.render('err/occurs-error', {

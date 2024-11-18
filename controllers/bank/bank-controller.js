@@ -29,6 +29,7 @@ class BankController extends BaseController {
                 data: {
                     cfg: config
                 },
+                version: config.version
             });
         } catch (error) {
             res.render('err/occurs-error', {
