@@ -126,19 +126,30 @@
                                             aria-labelledby="heading_<%= i+ data.cfg.male.finances.length %>"
                                             data-parent="#accordionExample2">
                                             <div class="card-body copy">
-                                                <p class="text-muted mb-0 faq-ans">
-                                                    STK: <b><%= data.cfg.female.finances[i].provider_number %></b>
-                                                    <br>
-                                                    NAME: <%= data.cfg.female.finances[i].holder_name %>
-                                                </p>
-                                                <div class="copy">
-                                                    <button
-                                                        class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"
-                                                        type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false" data-clipboard-text="<%= data.cfg.female.finances[i].provider_number %>">
-                                                        <i class="fas fa-copy mr-2"></i>
-                                                        Copy
-                                                    </button>
+                                                <div class="finances-text">
+                                                    <p class="text-muted mb-0 faq-ans">
+                                                        STK: <b><%= data.cfg.female.finances[i].provider_number %></b>
+                                                        <br>
+                                                        NAME: <%= data.cfg.female.finances[i].holder_name %>
+                                                    </p>
+                                                    <div class="copy">
+                                                        <button
+                                                                class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"
+                                                                type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false" data-clipboard-text="<%= data.cfg.female.finances[i].provider_number %>">
+                                                            <i class="fas fa-copy mr-2"></i>
+                                                            Copy
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="finances-qr">
+                                                    <% if(data?.cfg?.female?.finances[i]?.qr_url != null && data.cfg.female.finances[i].qr_url != ''){ %>
+                                                        <img class= "qr-image"
+                                                             src="<%= data.cfg.female.finances[i].qr_url %>"/>
+                                                    <% } else { %>
+                                                        <div class="qr-image-div"></div>
+                                                    <% } %>
                                                 </div>
                                             </div>
 
