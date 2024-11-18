@@ -426,7 +426,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    /*width: 250px;*/
+    width: 200px;
 }
 
 .bg-bottom-left {
