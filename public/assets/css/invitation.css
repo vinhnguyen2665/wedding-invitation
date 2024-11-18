@@ -601,8 +601,14 @@
 }
 
 .card-body.copy {
-    display: flex;
+    /*display: flex;*/
+    display: block;
     justify-content: space-around;
+
+    .finances-text,.finances-qr {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .btn-bottom-right {
@@ -631,4 +637,8 @@
     #container {
         padding: 0px;
     }
+}
+.qr-image {
+    height: 200px;
+    width: 200px;
 }

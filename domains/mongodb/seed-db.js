@@ -40,22 +40,26 @@ const SeedDB = {
       finances: [{
         provider_name: "MB Bank",
         provider_number: "9971997555555",
-        holder_name: "NGUYEN VAN AN"
+        holder_name: "NGUYEN VAN AN",
+        qr_url: "/assets/images/_EXO2386.png"
       }, {
         provider_name: "Techcombank",
         provider_number: "19034892842011",
-        holder_name: "NGUYEN VAN AN"
+        holder_name: "NGUYEN VAN AN",
+        qr_url: "/assets/images/_EXO2386.png"
       }, {
         provider_name: "Momo",
         provider_number: "0973699999",
-        holder_name: "NGUYEN VAN AN"
+        holder_name: "NGUYEN VAN AN",
+        qr_url: "/assets/images/_EXO2386.png"
       }, {
         provider_name: "Airpay",
         provider_number: "0973699999",
-        holder_name: "NGUYEN VAN AN"
+        holder_name: "NGUYEN VAN AN",
+        qr_url: "/assets/images/_EXO2386.png"
       }],
       email: "vinhnguyen2665@gmail.com",
-      phone: "0973699999",
+      phone: "0963319296",
       bg: '/assets/images/_EXO2386.png',
       bg_fb: '/assets/images/bg-fb.jpg'
     },
@@ -91,21 +95,25 @@ const SeedDB = {
       finances: [{
         provider_name: "Techcombank",
         provider_number: "19033799999999",
-        holder_name: "NGUYEN THI LAN ANH"
+        holder_name: "NGUYEN THI LAN ANH",
+        qr_url: "/assets/images/_EXO2386.png"
       }, {
         provider_name: "Techcombank",
         provider_number: "19033799999999",
-        holder_name: "NGUYEN THI LAN ANH"
+        holder_name: "NGUYEN THI LAN ANH",
+        qr_url: "/assets/images/_EXO2386.png"
       }, {
         provider_name: "Momo",
         provider_number: "09736",
-        holder_name: "NGUYEN THI LAN ANH"
+        holder_name: "NGUYEN THI LAN ANH",
+        qr_url: "/assets/images/_EXO2386.png"
       }, {
         provider_name: "Airpay",
         provider_number: "0973699999",
-        holder_name: "NGUYEN VAN AN"
+        holder_name: "NGUYEN VAN AN",
+        qr_url: "/assets/images/_EXO2386.png"
       }],
-      email: "female@gmail.com",
+      email: "quyenntb25@gmail.com ",
       phone: "0345294506",
       bg: '/assets/images/_EXO2386.png',
       bg_fb: '/assets/images/bg-fb.jpg'

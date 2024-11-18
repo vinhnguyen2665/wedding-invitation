@@ -32,24 +32,12 @@
                                 <p class="text-muted">Below are some information about the bank account us.</p>
                                 <a href="mailto:<%= data.cfg.male.email %>">
                                     <button type="button" class="btn btn-primary m-t-10 mr-1 waves-effect waves-light">
-                                        Email Groom
+                                        Email me
                                     </button>
                                 </a>
-
                                 <a href="tel:<%= data.cfg.male.phone %>">
                                     <button type="button" class="btn btn-success m-t-10 waves-effect waves-light">
-                                        Call Groom
-                                    </button>
-                                </a>
-
-                                <a href="mailto:<%= data.cfg.female.email %>">
-                                    <button type="button" class="btn btn-primary m-t-10 mr-1 waves-effect waves-light">
-                                        Email Bride
-                                    </button>
-                                </a>
-                                <a href="tel:<%= data.cfg.female.phone %>">
-                                    <button type="button" class="btn btn-success m-t-10 waves-effect waves-light">
-                                        Call Bride
+                                        Call me
                                     </button>
                                 </a>
 
@@ -59,11 +47,10 @@
                     <!-- end row -->
                     <div class="row justify-content-center">
                         <div class="col-lg-5  pt-3">
-                            <h5 class="mt-0 font-18 mb-4">
-                                <i class="ti-agenda text-primary mr-2 vni"></i>
-                                Groom’s family (Nhà trai)
+                            <h5 class="mt-0 font-18 mb-4"><i class="ti-agenda text-primary mr-2 vni"></i>
+                                Groom’s family (Nhà trai) <%=  data.cfg.male.finances.length %>
                             </h5>
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion" id="accordionExample"> 
                                 <% for (var i = 0, len =  data.cfg.male.finances.length ; i < len; i++) {%>
                                     <div class="card mb-0">
                                         <a data-toggle="collapse" href="#collapse_<%= i %>" class="faq <%=  i == 0 ? 'collapsed' : '' %>" aria-expanded="true"
@@ -75,36 +62,25 @@
                                         <div id="collapse_<%= i %>" class="collapse <%=  i == 0 ? 'show' : '' %>" aria-labelledby="heading_<%= i %>"
                                             data-parent="#accordionExample">
                                             <div class="card-body copy">
-                                                <div class="finances-text">
-                                                    <p class="text-muted mb-0 faq-ans">
-                                                        STK: <b><%= data.cfg.male.finances[i].provider_number %></b>
-                                                        <br>
-                                                        NAME: <%= data.cfg.male.finances[i].holder_name %>
-                                                    </p>
-                                                    <div class="copy">
-                                                        <button
-                                                                class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"
-                                                                type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                                aria-expanded="false" data-clipboard-text="<%= data.cfg.male.finances[i].provider_number %>">
-                                                            <i class="fas fa-copy mr-2"></i>
-                                                            Copy
-                                                        </button>
-                                                    </div>
-                                                </div>
-
-                                                <div class="finances-qr">
-                                                    <% if(data?.cfg?.male?.finances[i]?.qr_url != null && data.cfg.male.finances[i].qr_url != ''){ %>
-                                                        <img class= "qr-image"
-                                                             src="<%= data.cfg.male.finances[i].qr_url %>"/>
-                                                    <% } else { %>
-                                                        <div class="qr-image-div"></div>
-                                                    <% } %>
+                                                <p class="text-muted mb-0 faq-ans">
+                                                    STK: <b><%= data.cfg.male.finances[i].provider_number %></b>
+                                                    <br>
+                                                    NAME: <%= data.cfg.male.finances[i].holder_name %>
+                                                </p>
+                                                <div class="copy">
+                                                    <button
+                                                        class="btn btn-primary dropdown-toggle arrow-none waves-effect waves-light"
+                                                        type="button" data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false" data-clipboard-text="<%= data.cfg.male.finances[i].provider_number %>">
+                                                        <i class="fas fa-copy mr-2"></i>
+                                                        Copy
+                                                    </button>
                                                 </div>
                                             </div>
-
+    
                                         </div>
-                                    </div>
-                                <% } %>
+                                    </div>  
+                                <% } %> 
                                 <!-- collapse four end -->
                             </div>
                             <!-- end accordian -->
@@ -122,7 +98,7 @@
                                                 <h6 class="m-0 faq-question"><%= data.cfg.female.finances[i].provider_name %></h6>
                                             </div>
                                         </a>
-                                        <div id="collapse_<%= i+data.cfg.male.finances.length %>" class="collapse <%=  i == 0 ? 'show' : '' %>"
+                                        <div id="collapse_<%= i+data.cfg.male.finances.length %>" class="collapse <%=  i == 0 ? 'show' : '' %>" 
                                             aria-labelledby="heading_<%= i+ data.cfg.male.finances.length %>"
                                             data-parent="#accordionExample2">
                                             <div class="card-body copy">
@@ -141,10 +117,10 @@
                                                     </button>
                                                 </div>
                                             </div>
-
+    
                                         </div>
-                                    </div>
-                                <% } %>
+                                    </div>  
+                                <% } %> 
                             </div>
                             <!-- end accordian -->
                         </div>
@@ -174,9 +150,9 @@
     <script src="/assets/js/app.js"></script>
     <script src="/assets/js/live/invite/fonts.handle.js"></script>
     <script src="/plugins/clipboard/dist/clipboard.min.js"></script>
-    <script src="/plugins/toastr/toastr.min.js"></script>
+    <script src="/plugins/toastr/toastr.min.js"></script> 
     <script src="/assets/js/base/notify.js"></script>
-
+    
     <script type="text/javascript">
         var clipboard = new ClipboardJS('.btn');
 
